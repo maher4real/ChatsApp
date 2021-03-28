@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:id="@+id/grad_layout2"
+    android:background="@drawable/gradient_list"
+    android:layout_centerVertical="true"
+    tools:context=".RegisterActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+    <EditText
+        android:id="@+id/register_email"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_centerHorizontal="true"
+        android:hint="Email"
+        android:textColor="@color/colorSplash"
+        android:textColorHint="@color/colorAccent"
+        android:inputType="textEmailAddress"
+        android:background="@drawable/rounded_rect"
+        android:padding="4dp"
+        android:drawableStart="@drawable/email"
+        android:drawableTint="@color/colorAccent"
+        android:drawablePadding="8dp"
+        android:layout_marginTop="255dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"/>
+    <EditText
+        android:id="@+id/register_password"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/register_email"
+        android:hint="Password"
+        android:textColor="@color/colorSplash"
+        android:textColorHint="@color/colorAccent"
+        android:inputType="textPassword"
+        android:background="@drawable/rounded_rect"
+        android:padding="4dp"
+        android:drawableTint="@color/colorAccent"
+        android:drawablePadding="8dp"
+        android:drawableStart="@drawable/password"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"/>
+
+
+    <Button
+        android:id="@+id/register_button"
+        android:layout_width="230dp"
+        android:layout_height="45dp"
+        android:layout_below="@+id/register_password"
+        android:layout_centerHorizontal="true"
+        android:padding="4dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="19dp"
+        android:layout_marginRight="19dp"
+        android:text="Create Account"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        android:textColor="@android:color/black"
+        android:background="@drawable/buttons"/>
+    <TextView
+        android:id="@+id/already_have_account_link"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/register_button"
+        android:text="Already have an account ?"
+        android:layout_marginTop="7dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="23dp"
+        android:textAlignment="center"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorSplash"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="© ChatsApp"
+        android:textColor="@color/colorSplash"
+        android:layout_marginTop="690dp"
+        android:textAlignment="center"
+        android:fontFamily="sans-serif-thin"
+        />
+
+        </RelativeLayout>
+
+    </ScrollView>
+</RelativeLayout>
